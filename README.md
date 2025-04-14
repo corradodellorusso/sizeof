@@ -1,6 +1,6 @@
 ## size-of
 
-[![Build](https://img.shields.io/npm/v/size-of)](https://img.shields.io/npm/v/size-of) ![GitHub contributors](https://img.shields.io/github/contributors/corradodellorusso/sizeof) [![NPM](https://img.shields.io/npm/dy/size-of)](https://img.shields.io/npm/dy/object-sizeof) 
+[![Build](https://img.shields.io/npm/v/size-of)](https://img.shields.io/npm/v/size-of) ![GitHub contributors](https://img.shields.io/github/contributors/corradodellorusso/sizeof) [![NPM](https://img.shields.io/npm/dy/size-of)](https://img.shields.io/npm/dy/object-sizeof)
 
 ### Get the size of a JavaScript object in bytes
 
@@ -30,20 +30,23 @@ It prevents potential exceptions or infinite loops, improving reliability.
 ### Examples
 
 ```typescript
-import { sizeOf }from 'size-of'
-const size = sizeOf({ abc: 'def' })
-console.log(`Size of the object: ${sizeObj} bytes`)
+import { sizeOf } from "size-of";
+const size = sizeOf({ abc: "def" });
+console.log(`Size of the object: ${sizeObj} bytes`);
 ```
 
 ## License
+
 This project is licensed under the [MIT License](./LICENSE).
 
 ## Credits
+
 This project is a fork of [object-sizeof](https://github.com/miktam/sizeof), originally created by **Andrei Karpushonak aka @miktam** and licensed under the MIT License.
 
 The original code has been reworked to comply with the latest TypeScript standards and to improve performance and reliability.
 
 Compared to the original, this version offers:
+
 - No browser support, only work in node focusing on performance by simplifying the code and removing unnecessary checks
 - Better types and support for both CommonJS and ESM
 - Error are getting thrown instead of returning magic numbers
