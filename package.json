@@ -1,6 +1,6 @@
 {
   "name": "size-of",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sizeof of a JavaScript object in bytes",
   "repository": {
     "type": "git",
@@ -43,10 +43,13 @@
     "test": "vitest run",
     "check-format": "prettier --check .",
     "check-exports": "attw --pack .",
-    "ci": "npm run build && npm run check-format && npm run check-exports && npm run lint && npm run test"
+    "ci": "npm run build && npm run check-format && npm run check-exports && npm run lint && npm run test",
+    "local-release": "changeset version && changeset publish",
+    "prepublishOnly": "npm run ci"
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.17.4",
+    "@changesets/cli": "^2.29.0",
     "@types/node": "22.14.1",
     "prettier": "3.5.3",
     "tsup": "^8.4.0",
