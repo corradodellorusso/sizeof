@@ -1,5 +1,5 @@
 {
-  "name": "size-of",
+  "name": "size-of-object",
   "version": "1.0.1",
   "description": "Sizeof of a JavaScript object in bytes",
   "repository": {

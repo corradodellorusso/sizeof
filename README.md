@@ -1,6 +1,6 @@
-## size-of
+## size-of-object
 
-[![Build](https://img.shields.io/npm/v/size-of)](https://img.shields.io/npm/v/size-of) ![GitHub contributors](https://img.shields.io/github/contributors/corradodellorusso/sizeof) [![NPM](https://img.shields.io/npm/dy/size-of)](https://img.shields.io/npm/dy/object-sizeof)
+[![Build](https://img.shields.io/npm/v/size-of-object)](https://img.shields.io/npm/v/size-of-object) ![GitHub contributors](https://img.shields.io/github/contributors/corradodellorusso/sizeof) [![NPM](https://img.shields.io/npm/dy/size-of-object)](https://img.shields.io/npm/dy/size-of-object)
 
 ### Get the size of a JavaScript object in bytes
 
@@ -30,7 +30,7 @@ It prevents potential exceptions or infinite loops, improving reliability.
 ### Examples
 
 ```typescript
-import { sizeOf } from "size-of";
+import { sizeOf } from "size-of-object";
 const size = sizeOf({ abc: "def" });
 console.log(`Size of the object: ${sizeObj} bytes`);
 ```
