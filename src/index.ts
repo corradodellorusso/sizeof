@@ -23,14 +23,14 @@ const preciseStringSizeNode = (source: string) =>
  * Size in bytes for typed arrays
  * @param typedArray
  */
-function getSizeOfTypedArray(typedArray: ArrayBufferView) {
+const getSizeOfTypedArray = (typedArray: ArrayBufferView) => {
   if ("BYTES_PER_ELEMENT" in typedArray && "length" in typedArray) {
     return (
       (typedArray.length as number) * (typedArray.BYTES_PER_ELEMENT as number)
     );
   }
   throw new SizeOfError("Malformed typed array");
-}
+};
 
 /**
  * Size in bytes for complex objects
@@ -111,3 +111,5 @@ export const sizeOf = (source: unknown): number => {
   }
   return objectSizeSimple(source);
 };
+
+export { SizeOfError } from "./errors";
